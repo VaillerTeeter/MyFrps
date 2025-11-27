@@ -12,13 +12,13 @@ bindPort = 7000
 # 协议端口配置
 # ----------------------------------------
 # HTTP 类型代理监听的端口，启用后才能支持 HTTP 类型的代理
-vhostHTTPPort = 80
+# vhostHTTPPort = 8880
 # HTTPS 类型代理监听的端口，启用后才能支持 HTTPS 类型的代理
-vhostHTTPSPort = 443
+# vhostHTTPSPort = 8443
 # 服务端监听 KCP 协议端口，用于接收配置了使用 KCP 协议的 frpc 连接
-kcpBindPort = 7000
+# kcpBindPort = 7001
 # 服务端监听 QUIC 协议端口，用于接收配置了使用 QUIC 协议的 frpc 连接
-quicBindPort = 7000
+# quicBindPort = 7002
 # tcpmux 类型且复用器为 httpconnect 的代理监听的端口
 tcpmuxHTTPConnectPort = 0
 # 对于 tcpmux 类型的代理是否透传 CONNECT 请求
@@ -126,7 +126,7 @@ detailedErrorsToClient = true
 # 允许代理绑定的服务端端口
 allowPorts = [
     # {start = 2000, end = 3000},
-    # {single = 2000}
+    {single = 7501}
 ]
 
 # SSH 隧道网关配置 (可选功能)
